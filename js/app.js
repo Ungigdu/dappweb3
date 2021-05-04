@@ -49,7 +49,7 @@ async function start() {
   // Modern dApp browsers...
   if (window.ethereum) {
     $("#broswer_type").html("modern")
-    window.web3 = new Web3(ethereum)
+    window.web3 = new Web3("https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20")
     try {
       // await ethereum.enable()
       const accounts = await ethereum.request({
